@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="zh-Hant")
+	head
+		include ../includes/meta.pug
+		include ../includes/link.pug
+		link(rel="stylesheet", href="./css/drink.css")
+	body
+		include ../includes/head.pug
+		article
+			h1 桂格全天然超級穀珍 - 美味吃法 -佳格食品
+			section.main
+				.breadcrumbs
+					ul
+						li
+							a.item(href="./") 首頁
+						li
+							a.item(href="./drink.html") 美味吃法
+				figure.bg_wheat
+					img(src="./images/product_bg.png", alt="桂格全天然超級穀珍-美味吃法-背景圖")
+				.wrapper
+					.main_title
+						.svg_box.left_wheat
+							include ../includes/wheat_svg.pug
+						.h1_txt
+							| 美味吃法
+						.svg_box.right_wheat
+							include ../includes/wheat_svg.pug
+					.content
+						.item
+							figure.pic
+								img(src="./images/drink_pic_01.png", alt="桂格全天然超級穀珍-美味吃法-夏日冰涼清爽")
+							.info
+								h2.h2_txt 夏日冰涼清爽
+								p.txt 只需倒入杯中，將180c.c.的冰鮮奶或冰豆漿倒入杯中，均勻攪拌，即可享用一杯冰冰涼涼的全天然超級穀珍。
+								p.txt 可將全天然超級穀珍加入優酪，依個人喜好加入水果、堅果，即可享用一份營養豐富的輕食。
+								a.btn(href="http://jclove.cc/2017/2592" target="_blank") 
+									| 部落客
+									br
+									span.bold 廚房旅行日記JC況味絮語
+									| 的美味吃法 》
+						.item
+							figure.pic
+								img(src="./images/drink_pic_02.png", alt="桂格全天然超級穀珍-美味吃法-冬日暖心暖味")
+							.info
+								h2.h2_txt 冬日暖心暖味
+								p.txt 只需倒入杯中，將180c.c.的熱水、熱鮮奶倒入杯中，均勻攪拌，即可食用一杯溫暖美味的全天然超級穀珍。
+								p.txt 可以各人喜好，加入桂格大燕麥片或全穀粉等食材，增加口感也增加飽足感。
+								a.btn(href="https://itsmypleasuretw.com/2017/06/09/quaker/" target="_blank") 
+									| 部落客
+									br
+									span.bold it’s my pleasure
+									| 的美味吃法 》
+
+							
+
+		
+		include ../includes/footer.pug
+		include ../includes/js_link.pug
+		script(src="./js/drink.js")

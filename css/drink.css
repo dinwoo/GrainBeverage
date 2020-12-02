@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700&display=swap");
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  width: 100%;
+  vertical-align: top; }
+
+article {
+  overflow: hidden; }
+  article section.main {
+    position: relative; }
+    article section.main figure.bg_wheat {
+      width: 468px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 1; }
+    article section.main .wrapper {
+      max-width: 1030px;
+      padding: 0 15px;
+      margin: auto;
+      position: relative;
+      z-index: 2; }
+      article section.main .wrapper .content .item {
+        font-size: 0;
+        position: relative; }
+        article section.main .wrapper .content .item figure.pic {
+          width: 340px;
+          margin-bottom: 10px;
+          display: inline-block;
+          vertical-align: top; }
+        article section.main .wrapper .content .item .info {
+          width: calc(100% - 340px);
+          padding-left: 30px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top; }
+          article section.main .wrapper .content .item .info h2.h2_txt {
+            font-size: 40px;
+            line-height: 1.5;
+            line-height: 1;
+            display: inline-block;
+            position: relative; }
+            @media only screen and (max-width: 768px) {
+              article section.main .wrapper .content .item .info h2.h2_txt {
+                font-size: 33px; } }
+            article section.main .wrapper .content .item .info h2.h2_txt:before {
+              content: "";
+              display: block;
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              background-repeat: no-repeat;
+              top: 0;
+              bottom: 0;
+              margin: auto; }
+          article section.main .wrapper .content .item .info p.txt {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #4b4b4b;
+            padding-left: 15px;
+            position: relative;
+            margin: 10px 0; }
+            @media only screen and (max-width: 768px) {
+              article section.main .wrapper .content .item .info p.txt {
+                font-size: 14px; } }
+            article section.main .wrapper .content .item .info p.txt:before {
+              content: "";
+              display: block;
+              width: 7px;
+              height: 7px;
+              background-color: #4b4b4b;
+              border-radius: 50%;
+              position: absolute;
+              top: 10px;
+              left: 0; }
+          article section.main .wrapper .content .item .info a.btn {
+            font-size: 22px;
+            line-height: 1.5;
+            width: calc(100% - 340px);
+            line-height: 70px;
+            padding-right: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            text-align: right;
+            display: block;
+            position: absolute;
+            bottom: -15px; }
+            @media only screen and (max-width: 768px) {
+              article section.main .wrapper .content .item .info a.btn {
+                font-size: 18px; } }
+            article section.main .wrapper .content .item .info a.btn:before {
+              content: "";
+              display: block;
+              width: calc(100% + 100px);
+              height: 100%;
+              position: absolute;
+              top: 0;
+              z-index: -1; }
+            article section.main .wrapper .content .item .info a.btn br {
+              display: none; }
+            article section.main .wrapper .content .item .info a.btn span.bold {
+              font-weight: bold;
+              margin: 0 10px; }
+        article section.main .wrapper .content .item:nth-of-type(1) .info h2.h2_txt {
+          color: #4677b9; }
+          article section.main .wrapper .content .item:nth-of-type(1) .info h2.h2_txt:before {
+            width: 42px;
+            height: 52px;
+            background-image: url(../images/drink_icon_01.png);
+            right: -57px; }
+        article section.main .wrapper .content .item:nth-of-type(1) .info a.btn {
+          right: 0; }
+          article section.main .wrapper .content .item:nth-of-type(1) .info a.btn:before {
+            right: 0;
+            background-color: #4677b9; }
+        article section.main .wrapper .content .item:nth-of-type(2) {
+          margin-top: 85px; }
+          article section.main .wrapper .content .item:nth-of-type(2):after {
+            content: '';
+            display: block;
+            clear: both; }
+          article section.main .wrapper .content .item:nth-of-type(2) figure.pic {
+            float: right; }
+          article section.main .wrapper .content .item:nth-of-type(2) .info {
+            float: left; }
+            article section.main .wrapper .content .item:nth-of-type(2) .info h2.h2_txt {
+              color: #d56900; }
+              article section.main .wrapper .content .item:nth-of-type(2) .info h2.h2_txt:before {
+                width: 47px;
+                height: 48px;
+                background-image: url(../images/drink_icon_02.png);
+                right: -62px; }
+            article section.main .wrapper .content .item:nth-of-type(2) .info a.btn {
+              left: 0; }
+              article section.main .wrapper .content .item:nth-of-type(2) .info a.btn:before {
+                left: 0;
+                background-color: #d56900; }
+    @media only screen and (max-width: 960px) {
+      article section.main .wrapper {
+        max-width: 700px;
+        padding-bottom: 100px; }
+        article section.main .wrapper .content .item {
+          padding-bottom: 90px; }
+          article section.main .wrapper .content .item figure.pic {
+            width: 100%;
+            margin-bottom: 20px; }
+          article section.main .wrapper .content .item .info {
+            width: 100%;
+            padding-left: 0px; }
+            article section.main .wrapper .content .item .info h2.h2_txt:before {
+              content: "";
+              display: block; }
+            article section.main .wrapper .content .item .info p.txt:before {
+              content: "";
+              display: block; }
+            article section.main .wrapper .content .item .info a.btn {
+              width: auto;
+              margin-top: 20px;
+              display: inline-block;
+              position: absolute;
+              bottom: 0px;
+              line-height: 1.5;
+              padding: 15px 0px;
+              padding-left: 15px;
+              text-align: left; }
+              article section.main .wrapper .content .item .info a.btn:before {
+                content: "";
+                display: block;
+                width: 100%; }
+              article section.main .wrapper .content .item .info a.btn br {
+                display: block; }
+              article section.main .wrapper .content .item .info a.btn span.bold {
+                margin: 0 10px 0 0; }
+          article section.main .wrapper .content .item:nth-of-type(1) .info a.btn {
+            right: -15px; }
+          article section.main .wrapper .content .item:nth-of-type(2) {
+            margin-top: 50px; }
+            article section.main .wrapper .content .item:nth-of-type(2) .info a.btn {
+              left: auto;
+              right: -15px; } }
+    @media only screen and (max-width: 768px) {
+      article section.main figure.bg_wheat {
+        width: 190px; } }
+    @media only screen and (max-width: 374px) {
+      article section.main .wrapper .content .item {
+        padding-bottom: 75px; }
+        article section.main .wrapper .content .item .info h2.h2_txt:before {
+          content: "";
+          display: block; }
+        article section.main .wrapper .content .item .info p.txt:before {
+          content: "";
+          display: block; }
+        article section.main .wrapper .content .item .info a.btn {
+          font-size: 15px; }
+          article section.main .wrapper .content .item .info a.btn:before {
+            content: "";
+            display: block; } }

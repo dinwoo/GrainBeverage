@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700&display=swap");
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  width: 100%;
+  vertical-align: top; }
+
+article {
+  background-image: url("../images/product_bg.jpg");
+  background-position: center top;
+  background-size: 100%; }
+  article section.main {
+    overflow: hidden; }
+    article section.main figure.bg_wheat {
+      width: 468px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 1; }
+    article section.main .wrapper {
+      position: relative;
+      z-index: 2; }
+      article section.main .wrapper .slogan_box {
+        max-width: 1000px;
+        padding: 0 10px;
+        margin: auto;
+        text-align: center; }
+        article section.main .wrapper .slogan_box h2.h2_txt {
+          font-size: 26px;
+          line-height: 1.5;
+          color: #fff;
+          margin-bottom: 4px;
+          position: relative; }
+          @media only screen and (max-width: 768px) {
+            article section.main .wrapper .slogan_box h2.h2_txt {
+              font-size: 22px; } }
+          article section.main .wrapper .slogan_box h2.h2_txt:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 45px;
+            background-color: #612000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: -1;
+            -webkit-transform: translateY(4px);
+            -ms-transform: translateY(4px);
+            transform: translateY(4px); }
+          article section.main .wrapper .slogan_box h2.h2_txt figure.three {
+            width: 30px;
+            display: inline-block;
+            vertical-align: bottom; }
+        article section.main .wrapper .slogan_box .h3_box {
+          border-bottom: 4px solid #612000; }
+          article section.main .wrapper .slogan_box .h3_box h3.h3_txt {
+            font-size: 22px;
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+            color: #612000;
+            padding-left: 33px;
+            margin: 25px;
+            position: relative; }
+            @media only screen and (max-width: 768px) {
+              article section.main .wrapper .slogan_box .h3_box h3.h3_txt {
+                font-size: 18px; } }
+            article section.main .wrapper .slogan_box .h3_box h3.h3_txt:before {
+              content: "";
+              display: block;
+              width: 33px;
+              height: 34px;
+              background-image: url("../images/characteristic_hook.png");
+              background-size: contain;
+              background-position: center center;
+              position: absolute;
+              left: 0; }
+      article section.main .wrapper .content {
+        max-width: 1080px;
+        padding: 20px 15px 40px;
+        margin: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative; }
+        article section.main .wrapper .content .list_box {
+          font-size: 0;
+          text-align: center; }
+          article section.main .wrapper .content .list_box .product_item {
+            width: 25%;
+            padding: 20px 2.4%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top; }
+            article section.main .wrapper .content .list_box .product_item figure.product_pic img {
+              width: 86%;
+              -webkit-transition: .6s;
+              -o-transition: .6s;
+              transition: .6s; }
+            article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption {
+              font-size: 26px;
+              line-height: 1.5;
+              padding: 5.5px 0;
+              margin-top: 20px;
+              color: #fff;
+              text-align: center;
+              position: relative; }
+              @media only screen and (max-width: 768px) {
+                article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption {
+                  font-size: 22px; } }
+              article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption span {
+                margin-right: -13px; }
+            @media only screen and (min-width: 768px) {
+              article section.main .wrapper .content .list_box .product_item:hover figure.product_pic img {
+                -webkit-transform: scale(1.11);
+                -ms-transform: scale(1.11);
+                transform: scale(1.11); } }
+    @media only screen and (max-width: 960px) {
+      article section.main {
+        min-height: calc(100vh - 84px); }
+        article section.main .wrapper .content .txt {
+          margin-bottom: 60px; }
+        article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption {
+          font-size: 22px; }
+          article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption span {
+            margin-right: -11px; } }
+    @media only screen and (max-width: 768px) {
+      article section.main figure.bg_wheat {
+        width: 190px; }
+      article section.main .wrapper .slogan_box h2.h2_txt {
+        margin-bottom: 2px; }
+        article section.main .wrapper .slogan_box h2.h2_txt:before {
+          content: "";
+          display: block;
+          height: 32px;
+          -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+          transform: translateY(2px); }
+        article section.main .wrapper .slogan_box h2.h2_txt figure.three {
+          width: 22px; }
+      article section.main .wrapper .slogan_box .h3_box h3.h3_txt {
+        padding-left: 23px;
+        margin: 10px; }
+        article section.main .wrapper .slogan_box .h3_box h3.h3_txt:before {
+          content: "";
+          display: block;
+          width: 23px;
+          height: 25px; }
+      article section.main .wrapper .content .txt br {
+        display: block; }
+      article section.main .wrapper .content .list_box {
+        text-align: left; }
+        article section.main .wrapper .content .list_box .product_item {
+          width: 33.333333%;
+          padding: 0px 2.4% 45px;
+          text-align: center; } }
+    @media only screen and (max-width: 560px) {
+      article section.main .wrapper .content figure.title {
+        width: 180px; }
+      article section.main .wrapper .content .txt {
+        margin-bottom: 30px; }
+      article section.main .wrapper .content figure.nuts01, article section.main .wrapper .content figure.nuts02 {
+        display: none; }
+      article section.main .wrapper .content .list_box .product_item {
+        width: 50%; } }
+    @media only screen and (max-width: 374px) {
+      article section.main .wrapper .slogan_box h2.h2_txt {
+        margin-bottom: 4px;
+        font-size: 18px; }
+        article section.main .wrapper .slogan_box h2.h2_txt:before {
+          content: "";
+          display: block;
+          -webkit-transform: translateY(4px);
+          -ms-transform: translateY(4px);
+          transform: translateY(4px); }
+      article section.main .wrapper .slogan_box .h3_box h3.h3_txt {
+        font-size: 16px; }
+        article section.main .wrapper .slogan_box .h3_box h3.h3_txt:before {
+          content: "";
+          display: block; }
+      article section.main .wrapper .content figure.title {
+        width: 180px; }
+      article section.main .wrapper .content .txt {
+        font-size: 14px; }
+      article section.main .wrapper .content figure.nuts01, article section.main .wrapper .content figure.nuts02 {
+        display: none; }
+      article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption {
+        font-size: 18px; }
+        article section.main .wrapper .content .list_box .product_item figure.product_pic figcaption span {
+          margin-right: -9px; } }

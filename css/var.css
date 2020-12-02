@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
+@font-face {
+  font-family: "HuiFont";
+  src: url("/fonts/HuiFont29.ttf"); }
+
+* {
+  font-family: 'Noto Sans TC', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000; }

@@ -1,0 +1,256 @@
+@charset "utf-8"
+@import "var.sass"
+
+
+article
+	background-image: url('../images/product_bg.jpg')
+	// background-repeat: no-repeat
+	background-position: center top
+	background-size: 100%
+	section.main
+		// min-height: calc(100vh - 50px)
+		overflow: hidden
+		figure.bg_wheat
+			width: 468px
+			position: fixed
+			left: 0
+			bottom: 0
+			z-index: 1
+		.wrapper
+			position: relative
+			z-index: 2
+			.slogan_box
+				max-width: 1000px
+				padding: 0 10px
+				margin: auto
+				text-align: center
+				h2.h2_txt
+					+fontH2
+					color: #fff
+					margin-bottom: 4px
+					position: relative
+					+before
+						width: 100%
+						height: 45px
+						background-color: $brown
+						+pstc0
+						z-index: -1
+						transform: translateY(4px)
+					figure.three
+						width: 30px
+						display: inline-block
+						vertical-align: bottom
+				.h3_box
+					border-bottom: 4px solid $brown
+					h3.h3_txt
+						+fontH3
+						+dib
+						color: $brown
+						padding-left: 33px
+						margin: 25px
+						position: relative
+						+before
+							width: 33px
+							height: 34px
+							background-image: url('../images/characteristic_hook.png')
+							background-size: contain
+							background-position: center center
+							position: absolute
+							left: 0
+			.content
+				max-width: 1080px
+				padding: 20px 15px 40px
+				margin: auto
+				box-sizing: border-box
+				position: relative
+				.list_box
+					font-size: 0
+					text-align: center
+					.product_item
+						// width: 250px
+						width: 25%
+						// padding: 30px 25px
+						padding: 20px 2.4%
+						box-sizing: border-box
+						display: inline-block
+						vertical-align: top
+						figure.product_pic
+							// width: 210px
+							img
+								// margin-right: -8.57%
+								width: 86%
+								// box-shadow: 8px -8px 8px rgba(#2c2c2c,.16)
+								transition: .6s
+							figcaption
+								+fontH2
+								padding: 5.5px 0
+								margin-top: 20px
+								color: #fff
+								text-align: center
+								position: relative
+								span
+									margin-right: -13px
+								// +before('》')
+								// 	display: block
+								// 	font-size: 26px
+								// 	color: #fff
+								// 	position: absolute
+								// 	top: 50%
+								// 	right: 5px
+								// 	transform: translateY(-50%)
+						+hover
+							figure.product_pic
+								img
+									// width: 95.555556%
+									transform: scale(1.11)
+		+rwd(960px)
+			min-height: calc(100vh - 84px)
+			.wrapper
+				.content
+					// max-width: 1280px
+					// padding: 20px 15px 40px
+					figure.title
+						// width: 240px
+						// margin: 0px auto 15px
+					.txt
+						margin-bottom: 60px
+					figure.nuts01
+						// width: 220px
+						// top: 70px
+						// left: -140px
+					figure.nuts02
+						// width: 240px
+						// right: -150px
+						// bottom: -110px
+					.list_box
+						.product_item
+							// width: 20%
+							// padding: 0px 2.4%
+							figure.product_pic
+								img
+								figcaption
+									font-size: 22px
+									span
+										margin-right: -11px
+									// &:before
+									// 	font-size: 22px
+									// padding: 5.5px 0
+									// margin-top: 20px
+		+rwd(768px)
+			// min-height: calc(100vh - 55px)
+			figure.bg_wheat
+				width: 190px
+			.wrapper
+				.slogan_box
+					h2.h2_txt
+						margin-bottom: 2px
+						+before
+							height: 32px
+							transform: translateY(2px)
+						figure.three
+							width: 22px
+					.h3_box
+						h3.h3_txt
+							padding-left: 23px
+							margin: 10px
+							+before
+								width: 23px
+								height: 25px
+				.content
+					// max-width: 1280px
+					// padding: 20px 15px 40px
+					figure.title
+						// width: 240px
+						// margin: 0px auto 15px
+					.txt
+						// margin-bottom: 60px
+						br
+							display: block
+					figure.nuts01
+						// width: 220px
+						// top: 70px
+						// left: -140px
+					figure.nuts02
+						// width: 240px
+						// right: -150px
+						// bottom: -110px
+					.list_box
+						text-align: left
+						.product_item
+							width: 33.333333%
+							padding: 0px 2.4% 45px
+							text-align: center
+							figure.product_pic
+								img
+								figcaption
+									// padding: 5.5px 0
+									// margin-top: 20px
+		+rwd(560px)
+			// min-height: calc(100vh - 55px)
+			.wrapper
+				.content
+					// max-width: 1280px
+					// padding: 20px 15px 40px
+					figure.title
+						width: 180px
+						// margin: 0px auto 15px
+					.txt
+						margin-bottom: 30px
+					figure.nuts01,figure.nuts02
+						display: none
+					.list_box
+						.product_item
+							width: 50%
+							// padding: 0px 2.4% 45px
+							figure.product_pic
+								img
+								figcaption
+									// padding: 5.5px 0
+									// margin-top: 20px
+		+rwd(374px)
+			// min-height: calc(100vh - 55px)
+			.wrapper
+				.slogan_box
+					h2.h2_txt
+						margin-bottom: 4px
+						font-size: 18px
+						+before
+							// height: 32px
+							transform: translateY(4px)
+						figure.three
+							// width: 22px
+					.h3_box
+						h3.h3_txt
+							font-size: 16px
+							// padding-left: 23px
+							// margin: 10px
+							+before
+								// width: 23px
+								// height: 25px
+				.content
+					// max-width: 1280px
+					// padding: 20px 15px 40px
+					figure.title
+						width: 180px
+						// margin: 0px auto 15px
+					.txt
+						font-size: 14px
+					figure.nuts01,figure.nuts02
+						display: none
+					.list_box
+						.product_item
+							// padding: 0px 2.4% 45px
+							figure.product_pic
+								img
+								figcaption
+									font-size: 18px
+									span
+										margin-right: -9px
+									// &:before
+									// 	font-size: 18px
+									// padding: 5.5px 0
+									// margin-top: 20px
+						
+
+
+

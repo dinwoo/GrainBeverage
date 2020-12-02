@@ -1,0 +1,223 @@
+@charset "utf-8"
+@import "var.sass"
+
+article
+	overflow: hidden
+	section.main
+		position: relative
+		// .breadcrumbs
+		// 	position: relative
+		// 	z-index: 2
+		figure.bg_wheat
+			width: 468px
+			position: fixed
+			left: 0
+			bottom: 0
+			z-index: 1
+		.wrapper
+			max-width: 1030px
+			padding: 0 15px
+			margin: auto
+			position: relative
+			z-index: 2
+			.content
+				.item
+					font-size: 0
+					position: relative
+					figure.pic
+						width: 340px
+						margin-bottom: 10px
+						display: inline-block
+						vertical-align: top
+					.info
+						width: calc(100% - 340px)
+						padding-left: 30px
+						box-sizing: border-box
+						display: inline-block
+						vertical-align: top
+						h2.h2_txt
+							+fontH1
+							line-height: 1
+							display: inline-block
+							position: relative
+							+before
+								background-size: contain
+								background-position: center center
+								position: absolute
+								background-repeat: no-repeat
+								top: 0
+								bottom: 0
+								margin: auto
+						p.txt
+							+fontP
+							color: #4b4b4b
+							padding-left: 15px
+							position: relative
+							margin: 10px 0
+							+before
+								width: 7px
+								height: 7px
+								background-color: #4b4b4b
+								border-radius: 50%
+								position: absolute
+								top: 10px
+								left: 0
+						a.btn
+							+fontH3
+							width: calc(100% - 340px)
+							line-height: 70px
+							padding-right: 10px
+							box-sizing: border-box
+							color: #fff
+							text-align: right
+							display: block
+							position: absolute
+							bottom: -15px
+							+before
+								width: calc(100% + 100px)
+								height: 100%
+								position: absolute
+								top: 0
+								z-index: -1
+							br
+								display: none
+							span.bold
+								font-weight: bold
+								margin: 0 10px
+					&:nth-of-type(1)
+						figure.pic
+						.info
+							h2.h2_txt
+								color: $blue
+								&:before
+									width: 42px
+									height: 52px
+									background-image: url(../images/drink_icon_01.png)
+									right: -57px
+							a.btn
+								right: 0
+								&:before
+									right: 0
+									background-color: $blue
+					&:nth-of-type(2)
+						+clearfix
+						margin-top: 85px
+						figure.pic
+							float: right
+						.info
+							float: left
+							h2.h2_txt
+								color: $orange
+								&:before
+									width: 47px
+									height: 48px
+									background-image: url(../images/drink_icon_02.png)
+									right: -62px
+							a.btn
+								left: 0
+								&:before
+									left: 0
+									background-color: $orange
+		+rwd(960px)
+			.wrapper
+				max-width: 700px
+				padding-bottom: 100px
+				.content
+					.item
+						padding-bottom: 90px
+						figure.pic
+							width: 100%
+							// width: 240px
+							margin-bottom: 20px
+						.info
+							width: 100%
+							padding-left: 0px
+							h2.h2_txt
+								+before
+							p.txt
+								// padding-left: 15px
+								// margin: 10px 0
+								+before
+							a.btn
+								width: auto
+								margin-top: 20px
+								display: inline-block
+								position: absolute
+								// line-height: 70px
+								bottom: 0px
+								line-height: 1.5
+								padding: 15px 0px
+								padding-left: 15px
+								text-align: left
+								+before
+									width: 100%
+								br
+									display: block
+								span.bold
+									margin: 0 10px 0 0
+						&:nth-of-type(1)
+							figure.pic
+							.info
+								h2.h2_txt
+									&:before
+										// width: 42px
+										// height: 52px
+										// right: -57px
+								a.btn
+									right: -15px
+									&:before
+						&:nth-of-type(2)
+							margin-top: 50px
+							figure.pic
+							.info
+								h2.h2_txt
+									&:before
+										// width: 47px
+										// height: 48px
+										// right: -62px
+								a.btn
+									left: auto
+									right: -15px
+									&:before
+		+rwd(768px)
+			figure.bg_wheat
+				width: 190px
+		+rwd(374px)
+			.wrapper
+				.content
+					.item
+						padding-bottom: 75px
+						figure.pic
+						.info
+							h2.h2_txt
+								+before
+							p.txt
+								+before
+							a.btn
+								font-size: 15px
+								+before
+								span.bold
+						&:nth-of-type(1)
+							figure.pic
+							.info
+								h2.h2_txt
+									&:before
+								a.btn
+									&:before
+						&:nth-of-type(2)
+							figure.pic
+							.info
+								h2.h2_txt
+									&:before
+								a.btn
+									&:before
+
+
+
+
+
+
+
+
+
+

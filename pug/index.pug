@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="zh-Hant")
+	head
+		include ../includes/meta.pug
+		include ../includes/link.pug
+		link(rel="stylesheet", href="./css/index.css")
+	body
+		include ../includes/head.pug
+		article
+			h1 桂格全天然超級穀珍 - 首頁 -佳格食品
+			section.banner
+				.carousel_arrow.arrow_left#left
+					figure
+						img(src="./images/arrow_left.png", alt="")
+					//- .svg_box
+					//-   include ../includes/arrow_svg.pug
+				.carousel_arrow.arrow_right#right
+					figure
+						img(src="./images/arrow_right.png", alt="")
+					//- .svg_box
+					//-   include ../includes/arrow_svg.pug
+				.carousel_control
+					//- .dot.active
+					//- .dot
+					//- .dot
+				.carousel_box#box
+					.item.carousel_item
+						a(href="" target="_blank")
+							.desktop(style="background-image:url('./images/index_banner_pic_01_d.png')")
+							.mobile(style="background-image:url('./images/index_banner_pic_01_m.png')")
+					.item.carousel_item
+						a(href="" target="_blank")
+							.desktop(style="background-image:url('./images/index_banner_pic_02_d.png')")
+							.mobile(style="background-image:url('./images/index_banner_pic_02_m.png')")
+					.item.carousel_item
+						a(href="" target="_blank")
+							.desktop(style="background-image:url('./images/index_banner_pic_03_d.png')")
+							.mobile(style="background-image:url('./images/index_banner_pic_03_m.png')")
+					.item.carousel_item
+						// 如果是上傳 youtube 嵌入連結，請在連結後方加上參數 "?enablejsapi=1"
+						.iframe_box
+							iframe(src="https://www.youtube.com/embed/VFstfYXPYl0?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+						//- .desktop(style="background-image:url('./images/index_banner_pic_01_d.png')")
+						//- .mobile(style="background-image:url('./images/index_banner_pic_01_m.png')")
+					//- .item.carousel_item
+					//-   .desktop(style="background-image:url('./images/index_banner_pic_02_d.png')")
+					//-   .mobile(style="background-image:url('./images/index_banner_pic_02_m.png')")
+					//- .item.carousel_item
+					//-   .desktop(style="background-image:url('./images/index_banner_pic_03_d.png')")
+					//-   .mobile(style="background-image:url('./images/index_banner_pic_03_m.png')")
+		
+		include ../includes/footer.pug
+		include ../includes/js_link.pug
+		script(src="./js/index.js")

@@ -1,0 +1,547 @@
+@charset "utf-8"
+@import "var.sass"
+
+*
+	// outline: 1px solid #f00
+
+// .line
+//   width: 100%
+//   height: 15px
+//   background-image: url('../images/line.png')
+//   background-repeat: no-repeat
+//   background-position: right center
+//   background-size: 100%
+
+article
+	background-image: url('../images/product_bg.jpg')
+	background-repeat: repeat
+	background-position: center top
+	background-size: 100%
+	+rwd(768px)
+		// background-image: url('../images/product_intro_bg_m.jpg')
+		background-repeat: repeat
+		background-size: 100%
+	section.main
+		min-height: 100vh
+		overflow: hidden
+		figure.bg_wheat
+			width: 468px
+			position: fixed
+			left: 0
+			bottom: 0
+			z-index: 1
+		.back_page
+			max-width: 1550px
+			padding: 15px 15px 0
+			margin: auto
+			position: relative
+			z-index: 2
+			.back_btn
+				width: 110px
+				display: inline-block
+				text-align: center
+				padding: 10px 0
+				margin-left: 140px
+				font-size: 20px
+				background-color: $brown
+				color: #fff
+		.content
+			width: 1000px
+			padding: 0 15px
+			margin: auto
+			position: relative
+			.info_part
+				padding: 30px 0
+				font-size: 0
+				text-align: center
+				position: relative
+				z-index: 1
+				figure.product_pic
+					width: 360px
+					margin-bottom: 30px
+					display: inline-block
+					vertical-align: top
+					// box-shadow: 8px -8px 8px rgba(#2c2c2c,.16)
+				.info
+					width: 590px
+					margin-left: 40px
+					display: inline-block
+					vertical-align: top
+					text-align: left
+					.h1_txt
+						+fontH1
+						br
+							display: none
+						span.bold,span.name
+							font-weight: bold
+					.list_box
+						padding: 25px 0
+						p.li
+							+fontP
+							color: #000
+							padding-left: 25px
+							position: relative
+							+before()
+								width: 5px
+								height: 5px
+								border-radius: 50%
+								background-color: #000
+								position: absolute
+								left: 0
+								top: 11px
+					p.txt
+						+fontP
+						color: #000
+					.share 
+						+fontP
+						color: #000
+						margin-top: 80px
+						a.icon
+							+dib
+							margin: 0 5px
+							.svg_box
+								width: 40px
+								height: 40px
+								.st0
+									fill: $brown
+								.st1
+									fill: #fff
+							// +hover
+							//   .svg_box
+							//     .st0
+							//       fill: #eddfcc
+			.shop_part
+				position: relative
+				z-index: 1
+				.shop_title
+					position: relative
+					overflow: hidden
+					p
+						+fontH2
+						color: $brown
+						font-weight: bold
+						display: inline-block
+						position: relative
+						+before
+							width: 100vw
+							height: 4px
+							background-color: $brown
+							position: absolute
+							top: 0
+							bottom: 0
+							right: calc(-100vw - 10px)
+							margin: auto
+				.shop_box
+					max-width: 1000px
+					margin: auto
+					padding: 15px
+					font-size: 0
+					.shop_item
+						+dib
+						// width: 250px
+						width: 25%
+						padding: 0 20px
+						margin: 15px 0
+						box-sizing: border-box
+						// border-right: 1px solid #955b45
+						position: relative
+						+before
+							width: 1px
+							height: 100%
+							background-color: #955b45
+							position: absolute
+							top: 0
+							bottom: 0
+							right: 0
+							margin: auto
+						&:nth-of-type(4n)
+							&:before
+								display: none
+			.editor
+				border-top: 4px solid $brown
+				text-align: left
+				padding: 50px 35px
+				max-width: 1000px
+				box-sizing: border-box
+				margin: 0 auto
+				line-height: 1.5
+				position: relative
+				z-index: 1
+				strong
+					font-weight: bold
+				h1
+					display: block
+					font-size: 2em
+					margin-top: 0.67em
+					margin-bottom: 0.67em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				h2
+					display: block
+					font-size: 1.5em
+					margin-top: 0.83em
+					margin-bottom: 0.83em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				h3
+					display: block
+					font-size: 1.17em
+					margin-top: 1em
+					margin-bottom: 1em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				h4
+					display: block
+					font-size: 1em
+					margin-top: 1.33em
+					margin-bottom: 1.33em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				h5
+					display: block
+					font-size: .83em
+					margin-top: 1.67em
+					margin-bottom: 1.67em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				h6
+					display: block
+					font-size: .67em
+					margin-top: 2.33em
+					margin-bottom: 2.33em
+					margin-left: 0
+					margin-right: 0
+					font-weight: bold
+				a
+					text-decoration: underline
+					color: #000
+				b
+					font-weight: bold
+				i
+					font-style: italic
+				p
+					display: block
+					margin-top: 1em
+					margin-bottom: 1em
+					margin-left: 0
+					margin-right: 0
+				small
+					font-size: smaller
+				img
+					display: inline-block
+					max-width: 100%
+				iframe
+					width: 100%
+				ul
+					display: block
+					list-style-type: disc
+					margin-top: 1em
+					margin-bottom: 1em
+					margin-left: 0
+					margin-right: 0
+					padding-left: 40px
+					li
+						display: list-item
+						list-style-type: disc
+				ol
+					display: block
+					list-style-type: decimal
+					margin-top: 1em
+					margin-bottom: 1em
+					margin-left: 0
+					margin-right: 0
+					padding-left: 40px
+					li
+						display: list-item
+						list-style-type: decimal
+			.other_product
+				font-size: 0
+				padding-bottom: 100px
+				position: relative
+				z-index: 1
+				.title
+					position: relative
+					overflow: hidden
+					p
+						+fontH2
+						color: $brown
+						font-weight: bold
+						display: inline-block
+						position: relative
+						+before
+							width: 100vw
+							height: 4px
+							background-color: $brown
+							position: absolute
+							top: 0
+							bottom: 0
+							right: calc(-100vw - 10px)
+							margin: auto
+				.arrow
+					+dib
+					width: 50px
+					cursor: pointer
+					display: none
+					position: relative
+					&.arrow_left
+						left: -25px
+					&.arrow_right
+						right: -25px
+					p
+						font-size: 50px
+						color: $brown
+				.carousel_view
+					+dib
+					width: calc(100% - 100px)
+					margin-top: 60px
+					// width: 100%
+					.carousel_box#box
+						width: 100%
+						// margin-top: 60px
+						.item.carousel_item
+							display: inline-block
+							vertical-align: top
+							box-sizing: border-box
+							figure.product_pic
+								figcaption
+									// padding-top: 20px
+									font-size: 24px
+									color: #fff
+									padding: 10px 0
+									margin-top: 10px
+									text-align: center
+									span
+										margin-right: -12px
+					&.none_carousel
+						width: 100%
+						.carousel_box
+							.item
+								width: 25%
+								padding: 0 30px
+				.control_box,.owl-dots
+					text-align: center
+					padding: 30px
+					.dot,.owl-dot
+						+dib
+						width: 13px
+						height: 13px
+						margin: 0 5px
+						border-radius: 50%
+						background-color: #fff
+						outline: none
+						cursor: pointer
+						&.active
+							background-color: $brown
+		+rwd(1280px)
+			.content
+				width: 890px
+				.info_part
+					.info
+						width: 490px
+		+rwd(1100px)
+			.back_page
+				.back_btn
+					margin-left: 110px
+			.content
+				width: 680px
+				.info_part
+					.info
+						margin-left: 0
+						.h1_txt
+							text-align: center
+							br
+								display: block
+		+rwd(960px)
+			.back_page
+				.back_btn
+					margin-left: 0px
+			.content
+				// width: 680px
+				.other_product
+					.title
+					.arrow
+					.carousel_view
+						.carousel_box#box
+							.item.carousel_item
+								padding: 0 10px
+		+rwd(768px)
+			figure.bg_wheat
+				width: 190px
+			.back_page
+				.back_btn
+					width: 85px
+					font-size: 15px
+			.content
+				width: 500px
+				padding-bottom: 50px
+				.info_part
+					// padding: 30px 0
+					figure.product_pic
+						width: 45%
+						// width: 330px
+						// margin-bottom: 30px
+					.info
+						max-width: 545px
+						width: 100%
+						margin-left: 0px
+						.list_box
+							// padding: 25px 0
+							p.li
+								// padding-left: 25px
+								// +before()
+								//   width: 5px
+								//   height: 5px
+								//   top: 11px
+						p.txt
+						.share 
+							// margin-top: 80px
+							a.icon
+								// margin: 0 5px
+								.svg_box
+									// width: 40px
+									// height: 40px
+				.shop_part
+					padding-top: 50px
+					.shop_title
+						text-align: center
+						p
+							+after
+								width: 100vw
+								height: 4px
+								background-color: $brown
+								position: absolute
+								top: 0
+								bottom: 0
+								left: calc(-100vw - 10px)
+								margin: auto
+					.shop_box
+						padding: 15px 0
+						.shop_item
+							width: 50%
+							+before
+								display: none
+							&:nth-of-type(odd)
+								&:before
+									display: block
+							+after
+								width: 60%
+								height: 1px
+								background-color: #955b45
+								position: absolute
+								top: -15px
+								right: 0
+								left: 0
+								margin: auto
+							&:nth-of-type(1),&:nth-of-type(2)
+								&:after
+									display: none
+							// &:nth-last-child(1)
+							//   &:after
+							//     display: none
+				.editor
+					padding: 50px 20px
+				.other_product
+					padding-bottom: 50px
+					.title
+						text-align: center
+						p
+							+after
+								width: 100vw
+								height: 4px
+								background-color: $brown
+								position: absolute
+								top: 0
+								bottom: 0
+								left: calc(-100vw - 10px)
+								margin: auto
+					.arrow
+						width: 30px
+						&.arrow_left
+							left: -15px
+						&.arrow_right
+							right: -15px
+						p
+							font-size: 30px
+					.carousel_view
+						width: calc(100% - 60px)
+						margin-top: 0
+						.carousel_box#box
+							margin-top: 30px
+							.item.carousel_item
+								// width: 33.333333%
+								padding: 0 5px
+								figure.product_pic
+									figcaption
+										padding-top: 10px
+										font-size: 14px
+										span
+											margin-right: -7px
+					.control_box
+						padding: 20px
+						.dot
+		+rwd(560px)
+			.back_page
+				.back_btn
+			.content
+				width: 320px
+				padding-bottom: 50px
+				figure.cup_02
+					bottom: -1%
+				.info_part
+					figure.product_pic
+						// width: 200px
+						// margin-bottom: 30px
+					.info
+						figure.name
+						.list_box
+							padding: 15px 0
+							p.li
+								padding-left: 15px
+						p.txt
+						.share 
+							margin-top: 60px
+							a.icon
+								.svg_box
+									width: 30px
+									height: 30px
+				.shop_part
+					.shop_title 
+					.shop_box
+						.shop_item
+				.editor
+					padding: 20px 0
+				.other_product
+					.title
+						p
+					.arrow
+						.svg_box
+					.carousel_view
+						.carousel_box#box
+							.item.carousel_item
+								figure.product_pic
+									figcaption
+							&.none_carousel
+								.item
+									width: 50%
+									padding: 20px 15px
+					.control_box
+						.dot
+		+rwd(374px)
+			.back_page
+				.back_btn
+			.content
+				width: 270px
+				padding-bottom: 30px
+
+
+
+
+
+
+
+

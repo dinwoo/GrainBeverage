@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="zh-Hant")
+	head
+		include ../includes/meta.pug
+		include ../includes/link.pug
+		link(rel="stylesheet", href="./css/product_list.css")
+	body
+		include ../includes/head.pug
+		article
+			h1
+			section.main
+				.breadcrumbs
+					ul
+						li
+							a.item(href="./") 首頁
+						li
+							a.item(href="./product_list.html") 產品介紹
+				figure.bg_wheat
+					img(src="./images/product_bg.png", alt="桂格全天然超級穀珍-產品介紹-背景燕麥")
+				.wrapper
+					.main_title
+						.svg_box.left_wheat
+							include ../includes/wheat_svg.pug
+						.h1_txt
+							| 超級
+							span.bold 穀珍・
+							| 輕鬆
+							span.bold 養生
+						.svg_box.right_wheat
+							include ../includes/wheat_svg.pug
+					.slogan_box
+						h2.h2_txt
+							| 桂格全天然超級穀珍系列
+							figure.three
+								img(src="./images/characteristic_three_.png", alt="")
+							| 大特色
+						.h3_box
+							h3.h3_txt 全天然，無人工化學添加物
+							h3.h3_txt 無添加糖，以穀物原味取代糖
+							h3.h3_txt 保留全榖營養
+					.content
+						.list_box
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_01.png", alt="")
+									figcaption(style="background-color:#a64e98") 黑穀堅果
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_02.png", alt="")
+									figcaption(style="background-color:#f0b148") 黃金堅果
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_03.png", alt="")
+									figcaption(style="background-color:#e35168") 杏仁核桃
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_04.png", alt="")
+									figcaption(style="background-color:#00a39e") 嚴選十六
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_05.png", alt="")
+									figcaption(style="background-color:#cfaf99") 藜麥堅果
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_06.png", alt="")
+									figcaption(style="background-color:#666eaf") 黑芝麻糊
+										span  》 
+							a.product_item(href="./product_intro.html")
+								figure.product_pic
+									img(src="./images/product_pic_07.png", alt="")
+									figcaption(style="background-color:#50b363") 核桃堅果
+										span  》 
+		
+		include ../includes/footer.pug
+		include ../includes/js_link.pug
+		script(src="./js/product_list.js")

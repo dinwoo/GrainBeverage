@@ -1,0 +1,169 @@
+@charset "utf-8"
+@import "var.sass"
+
+article
+  section.banner
+    width: 100%
+    // max-height: calc(100vh - 130px)
+    // height: 100vh
+    height: calc(100vh - 130px)
+    padding-top: 80px
+    overflow: hidden
+    position: relative
+    .carousel_arrow
+      display: none
+      width: 42px
+      height: 91px
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      z-index: 5
+      cursor: pointer
+      // .svg_box
+      //   width: 100%
+      //   height: 100%
+      //   .st0
+      //     fill: rgba($yellow,.7)
+      //     transition: .3s
+      //   .st1
+      //     fill: #fff
+      //   +hover
+      //     .st0
+      //       fill: rgba($yellow,1)
+      &.arrow_left
+        left: 0px
+        // svg
+        //   transform: rotateZ(180deg)
+      &.arrow_right
+        right: 0px
+    .carousel_control
+      position: absolute
+      left: 50%
+      bottom: 70px
+      transform: translateX(-50%)
+      z-index: 5
+      .dot
+        +dib
+        width: 13px
+        height: 13px
+        margin: 0 5px
+        border-radius: 50%
+        background-color: #fff
+        cursor: pointer
+        &.active
+          background-color: $brown
+    .carousel_box
+      width: 300%
+      height: 100%
+      font-size: 0
+      position: relative
+      left: 0%
+      .item
+        width: 33.333333%
+        height: 100%
+        display: inline-block
+        vertical-align: top
+        .desktop,.mobile,.iframe_box
+          width: 100%
+          height: 100%
+          background-size: cover
+          background-position: center center
+          background-repeat: no-repeat
+        .mobile
+          display: none
+        .iframe_box
+          position: relative
+          // +before
+          //   width: 100%
+          //   height: 100%
+          //   // background-color: rgba(#000,.5)
+          //   position: absolute
+          //   top: 0
+          //   left: 0
+          //   cursor: pointer
+          //   // pointer-events: none
+          iframe
+            width: 100%
+            height: 100%
+          // &.play
+          //   &:before
+          //     display: none
+    +rwdh(990px)
+      height: 50vw
+      min-height: calc(100vh - 130px)
+    // +minW(1681px)
+    //   +rwdh(960px)
+    //     height: 50vw
+    //     // margin-bottom: 55px
+    // +rwd(1680px)
+    //   +minW(1450px)
+    //     +rwdh(860px)
+    //       +minH(820px)
+    //         height: 50vw
+    //         // margin-bottom: 55px
+    // +rwd(1450px)
+    //   +minW(1280px)
+    //     +rwdh(760px)
+    //       +minH(740px)
+    //         height: 50vw
+    //         // margin-bottom: 55px
+    // +rwd(1280px)
+    //   +rwdh(740px)
+    //     height: 50vw
+        // margin-bottom: 55px
+    +rwd(1080px)
+      // height: calc(100vh - 90px)
+      height: calc(100vh - 100px)
+      padding-top: 50px
+    +rwd(960px)
+      height: calc(100vh - 104px)
+      padding-top: 0
+    +rwd(768px)
+      // height: calc(100vh - 100px)
+      // height: 166.76vw
+      height: 100%
+      height: auto
+      .carousel_arrow
+        // width: 30px
+        // height: 30px
+        // &.arrow_left
+        //   left: 10px
+        // &.arrow_right
+        //   right: 10px
+      .carousel_control
+        bottom: 50px
+        .dot
+          &.active
+      .carousel_box
+        .item
+          .desktop
+            display: none
+          .mobile,.iframe_box
+            display: block
+            padding-bottom: 166.76%
+          .iframe_box
+            position: relative
+            iframe
+              width: 100%
+              height: 100%
+              position: absolute
+              top: 0
+              left: 0
+    +rwd(560px)
+      .carousel_arrow
+        width: 20px
+        height: 44px
+        // &.arrow_left
+        //   left: 10px
+        // &.arrow_right
+        //   right: 10px
+      .carousel_control
+        .dot
+          &.active
+      .carousel_box
+        .item
+          .desktop
+          .mobile
+        
+        

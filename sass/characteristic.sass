@@ -1,0 +1,252 @@
+@charset "utf-8"
+@import "var.sass"
+
+article
+	section.main
+		// min-height: calc(100vh - 50px)
+		overflow: hidden
+		position: relative
+		.wrapper
+			max-width: 1580px
+			padding: 0 10px
+			padding-bottom: 50px
+			margin: auto
+			box-sizing: border-box
+			.content
+				+clearfix
+				position: relative
+				.slogan_bar
+					width: 100%
+					background-color: $lightOrange
+					padding: 18px 0
+					font-size: 0
+					text-align: center
+					box-sizing: border-box
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					.slogan
+						+dib
+						padding: 3px 40px
+						p
+							+fontH2
+							color: #fff
+						figure.num
+							width: 145px
+							margin: 0 5px
+						&:nth-of-type(2)
+							border-left: 2px solid #fff
+							figure.num
+								+dib
+							p
+								+dib
+				.left
+					float: left
+					max-width: 735px
+					width: calc((100% - 30px) / 2)
+				.right
+					float: right
+					max-width: 735px
+					width: calc((100% - 30px) / 2)
+				.item
+					font-size: 0
+					figure.pic
+						// width: 340px
+						width: 46.25%
+						display: inline-block
+						vertical-align: top
+					.info
+						// width: calc(100% - 340px)
+						width: 53.74%
+						padding-left: 15px
+						box-sizing: border-box
+						display: inline-block
+						vertical-align: top
+						h3.h3_txt
+							font-size: 26px
+							line-height: 1.3
+							color: #2c2c2c
+							font-weight: normal
+							margin-bottom: 10px
+							figure.num
+								display: inline-block
+								vertical-align: bottom
+								height: 40px
+								img
+									width: auto
+									height: 100%
+							span.red
+								color: #900000
+						p.txt
+							+fontP
+							color: #2c2c2c
+					&:nth-of-type(1)
+						padding-bottom: 220px
+
+
+
+
+
+
+
+
+
+
+
+		+rwdh(900px)
+			.wrapper
+		+rwdh(800px)
+			// height: auto
+			.wrapper
+		+rwd(1480px)
+			.wrapper
+				.content
+					.left
+					.right
+					.item
+						figure.pic
+						.info
+							h3.h3_txt
+								font-size: 22px
+							p.txt
+								font-size: 14px
+		+rwd(1260px)
+			// background-image: url('../images/characteristic_bg_d.jpg')
+			// height: 100vh
+			.wrapper
+				.content
+					.slogan_bar
+						position: static
+						transform: none
+						margin-bottom: 40px
+						padding: 0px 10px
+						.slogan
+							padding: 20px 0px
+							max-width: 320px
+							margin: auto
+							display: block
+							box-sizing: border-box
+							p
+							figure.num
+								width: 145px
+								margin: 0
+							&:nth-of-type(1)
+								p
+									+dib
+									&:nth-of-type(2)
+										padding-left: 10px
+							&:nth-of-type(2)
+								border-left: none
+								border-top: 2px solid #fff
+								position: relative
+								text-align: right
+								figure.num
+									position: absolute
+									left: 0px
+									top: 50%
+									transform: translateY(-50%)
+								p
+									display: block
+					.left,.right
+						float: none
+						max-width: 735px
+						width: 100%
+						margin: auto
+					.item
+						margin-bottom: 30px
+						figure.pic
+							// width: 340px
+							width: 100%
+							margin-bottom: 10px
+						.info
+							// width: calc(100% - 340px)
+							width: 100%
+							padding-left: 0px
+							h3.h3_txt
+								font-size: 26px
+								margin-bottom: 10px
+								figure.num
+									height: 40px
+							p.txt
+								+fontP
+						&:nth-of-type(1)
+							padding-bottom: 0px
+		+rwd(1100px)
+			// background-image: url('../images/characteristic_bg_m.jpg')
+			// background-position: center top
+			// height: auto
+			.wrapper
+		+rwd(960px)
+			// min-height: calc(100vh - 104px)
+			.wrapper
+		+rwd(768px)
+			// min-height: calc(100vh - 100px)
+			.wrapper
+		+rwd(560px)
+			.wrapper
+				.content
+					.slogan_bar
+						// margin-bottom: 40px
+						// padding: 0px 30px
+						.slogan
+							// padding: 30px 0px
+							// max-width: 320px
+							p
+							figure.num
+								width: 120px
+							&:nth-of-type(1)
+								p
+									+dib
+									&:nth-of-type(2)
+										padding-left: 10px
+							&:nth-of-type(2)
+								figure.num
+								p
+					.item
+						figure.pic
+						.info
+							h3.h3_txt
+								font-size: 22px
+								// margin-bottom: 10px
+								figure.num
+									height: 30px
+							p.txt
+		+rwd(420px)
+			// min-height: calc(100vh - 112px)
+		+rwd(374px)
+			.wrapper
+				.content
+					.slogan_bar
+						// margin-bottom: 40px
+						// padding: 0px 30px
+						.slogan
+							// padding: 30px 0px
+							// max-width: 320px
+							p
+								font-size: 18px
+							figure.num
+								width: 100px
+							&:nth-of-type(1)
+								p
+									+dib
+									&:nth-of-type(2)
+										padding-left: 10px
+							&:nth-of-type(2)
+								figure.num
+								p
+					.item
+						figure.pic
+						.info
+							h3.h3_txt
+								font-size: 20px
+								figure.num
+							p.txt
+
+
+
+
+
+
+
+
+
