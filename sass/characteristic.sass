@@ -23,8 +23,9 @@ article
 					text-align: center
 					box-sizing: border-box
 					position: absolute
-					top: 50%
-					transform: translateY(-50%)
+					bottom: 0
+					// top: 50%
+					// transform: translateY(-50%)
 					.slogan
 						+dib
 						padding: 3px 40px
@@ -32,7 +33,7 @@ article
 							+fontH2
 							color: #fff
 						figure.num
-							width: 145px
+							width: 180px
 							margin: 0 5px
 						&:nth-of-type(2)
 							border-left: 2px solid #fff
@@ -80,8 +81,10 @@ article
 						p.txt
 							+fontP
 							color: #2c2c2c
-					&:nth-of-type(1)
-						padding-bottom: 220px
+					&:nth-of-type(1),&:nth-of-type(2)
+						padding-bottom: 40px
+					&:nth-of-type(3)
+						padding-bottom: 140px
 
 
 
@@ -170,6 +173,10 @@ article
 							p.txt
 								+fontP
 						&:nth-of-type(1)
+							padding-bottom: 0px
+						&:nth-of-type(1),&:nth-of-type(2)
+							padding-bottom: 0px
+						&:nth-of-type(3)
 							padding-bottom: 0px
 		+rwd(1100px)
 			// background-image: url('../images/characteristic_bg_m.jpg')

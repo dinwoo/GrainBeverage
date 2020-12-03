@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700&display=swap");
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  width: 100%;
+  vertical-align: top; }
+
+article {
+  background-image: url("../images/quality_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  article section.main {
+    min-height: calc(100vh - 30px);
+    position: relative;
+    overflow: hidden; }
+    article section.main .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 1350px;
+      padding: 0 15px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      article section.main .wrapper .content {
+        width: 380px;
+        margin: auto;
+        text-align: center; }
+        article section.main .wrapper .content figure.title {
+          width: 230px;
+          margin: 0px auto 60px; }
+        article section.main .wrapper .content h2.h2_txt {
+          font-size: 26px;
+          line-height: 1.5;
+          width: 260px;
+          font-weight: normal;
+          color: #ff6c00;
+          padding-bottom: 15px;
+          margin: 0 auto 20px;
+          background-image: url("../images/quality_line.png");
+          background-size: 100%;
+          background-position: center bottom;
+          background-repeat: no-repeat; }
+          @media only screen and (max-width: 768px) {
+            article section.main .wrapper .content h2.h2_txt {
+              font-size: 22px; } }
+        article section.main .wrapper .content p.txt {
+          font-size: 18px;
+          line-height: 1.5;
+          color: #262626; }
+          @media only screen and (max-width: 768px) {
+            article section.main .wrapper .content p.txt {
+              font-size: 14px; } }
+          article section.main .wrapper .content p.txt span.break {
+            display: block; }
+      article section.main .wrapper figure.left_pic {
+        width: 26.666667%;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      article section.main .wrapper figure.right_pic {
+        width: 27.04%;
+        position: absolute;
+        bottom: -25%;
+        right: 15px; }
+    @media only screen and (max-height: 800px) {
+      article section.main .wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        margin: auto;
+        margin-bottom: 200px; } }
+    @media only screen and (max-width: 960px) {
+      article section.main {
+        min-height: calc(100vh - 84px); }
+        article section.main .wrapper {
+          width: 100%;
+          padding: 50px 15px 0px;
+          position: static;
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
+          text-align: center; }
+          article section.main .wrapper figure.left_pic {
+            width: 29.08%;
+            min-width: 105px;
+            padding: 15px;
+            position: static;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none; }
+          article section.main .wrapper figure.right_pic {
+            width: 29.08%;
+            min-width: 105px;
+            padding: 15px;
+            position: static;
+            display: inline-block;
+            vertical-align: middle; } }
+    @media only screen and (max-width: 768px) {
+      article section.main {
+        min-height: calc(100vh - 80px); }
+        article section.main .wrapper .content {
+          width: 260px; }
+          article section.main .wrapper .content figure.title {
+            width: 180px;
+            margin: 0px auto 20px; }
+          article section.main .wrapper .content h2.h2_txt {
+            width: 200px; } }
+    @media only screen and (max-width: 560px) {
+      article section.main {
+        min-height: calc(100vh - 80px); }
+        article section.main .wrapper {
+          padding: 20px 15px 0px;
+          margin-bottom: 30px; } }
+    @media only screen and (max-width: 420px) {
+      article section.main {
+        min-height: calc(100vh - 92px); } }
