@@ -15,6 +15,7 @@ article
 			.content
 				+clearfix
 				position: relative
+				padding-bottom: 140px
 				.slogan_bar
 					width: 100%
 					background-color: $lightOrange
@@ -41,16 +42,20 @@ article
 								+dib
 							p
 								+dib
-				.left
-					float: left
-					max-width: 735px
-					width: calc((100% - 30px) / 2)
-				.right
-					float: right
-					max-width: 735px
-					width: calc((100% - 30px) / 2)
+				// .left
+				// 	float: left
+				// 	max-width: 735px
+				// 	width: calc((100% - 30px) / 2)
+				// .right
+				// 	float: right
+				// 	max-width: 735px
+				// 	width: calc((100% - 30px) / 2)
 				.item
+					width: calc((50% - 30px))
+					margin: 10px
 					font-size: 0
+					display: inline-block
+					vertical-align: top
 					figure.pic
 						// width: 340px
 						width: 46.25%
@@ -81,10 +86,10 @@ article
 						p.txt
 							+fontP
 							color: #2c2c2c
-					&:nth-of-type(1),&:nth-of-type(2)
-						padding-bottom: 40px
-					&:nth-of-type(3)
-						padding-bottom: 140px
+					// &:nth-of-type(1),&:nth-of-type(2)
+					// 	padding-bottom: 40px
+					// &:nth-of-type(3)
+					// 	padding-bottom: 140px
 
 
 
@@ -118,6 +123,8 @@ article
 			// height: 100vh
 			.wrapper
 				.content
+					text-align: center
+					padding-bottom: 0
 					.slogan_bar
 						position: static
 						transform: none
@@ -131,7 +138,7 @@ article
 							box-sizing: border-box
 							p
 							figure.num
-								width: 145px
+								width: 135px
 								margin: 0
 							&:nth-of-type(1)
 								p
@@ -150,13 +157,16 @@ article
 									transform: translateY(-50%)
 								p
 									display: block
-					.left,.right
-						float: none
+					// .left,.right
+					// 	float: none
+					// 	max-width: 735px
+					// 	width: 100%
+					// 	margin: auto
+					.item
 						max-width: 735px
 						width: 100%
-						margin: auto
-					.item
-						margin-bottom: 30px
+						text-align-last: left
+						// margin-bottom: 30px
 						figure.pic
 							// width: 340px
 							width: 100%
