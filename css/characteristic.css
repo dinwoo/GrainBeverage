@@ -147,7 +147,8 @@ article section.main {
       article section.main .wrapper .content .item {
         max-width: 735px;
         width: 100%;
-        text-align-last: left; }
+        text-align-last: left;
+        margin: 10px 0; }
         article section.main .wrapper .content .item figure.pic {
           width: 100%;
           margin-bottom: 10px; }
