@@ -22,8 +22,7 @@ article section.main {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     article section.main .wrapper .content {
-      position: relative;
-      padding-bottom: 140px; }
+      position: relative; }
       article section.main .wrapper .content:after {
         content: '';
         display: block;
@@ -35,9 +34,7 @@ article section.main {
         font-size: 0;
         text-align: center;
         -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        position: absolute;
-        bottom: 0; }
+        box-sizing: border-box; }
         article section.main .wrapper .content .slogan_bar .slogan {
           display: inline-block;
           vertical-align: middle;
@@ -106,8 +103,7 @@ article section.main {
       font-size: 14px; } }
   @media only screen and (max-width: 1260px) {
     article section.main .wrapper .content {
-      text-align: center;
-      padding-bottom: 0; }
+      text-align: center; }
       article section.main .wrapper .content .slogan_bar {
         position: static;
         -webkit-transform: none;
